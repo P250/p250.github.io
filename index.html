@@ -8,17 +8,27 @@
 		<script type="text/javascript" src="login.js"></script>
 	</head>
 	
-		<body>
-			<title>01101001#8125</title>
+				<title>01101001#8125</title>
 
-			<div id="banner-message">
-			<p>My bad website</p>
-			<button id='button'>Login</button>
+				<script>
+					function validateForm() {
+					var input = document.forms["login"]["pwd"].value;
+
+					if (x = "1234") {
+						alert("asldlk;asd;l");
+						}
+					}
+				</script>
+
+				<div id="banner-message">
+				<p>My bad website</p>
+				<button id='button'>Login</button>
   
-			<form id='login' name="myForm" action="/action_page.php" method="post">
-			Password: <input type="text" name="pwd"> <div>
-			<input type="submit" value="Submit">
+				<form id='login' name="login" action="" onsubmit="return validateForm()" method="post">
+				Password: <input id='loginForm' type="text" name="pwd">
+				<div id='divider'>
+				<input id='button' type="submit" value="Submit">
 
-			</div>
+				</div>
 		</body>
 </html>

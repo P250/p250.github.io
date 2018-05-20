@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	var banner = $("#banner-message");
-	var button = $("button");
+		var banner = $("#banner-message");
+	var button = $("#button");
 	var login = $('#login');
 
 	button.on("click", function(){
@@ -11,8 +11,9 @@ $(document).ready(function(){
  	 button.hide();
   
   	login.css({"display": "inline"});
-
-    	});
+    document.getElementById("loginForm").placeholder = "enter 4 digit password";
+		
+});
 });
 
 
